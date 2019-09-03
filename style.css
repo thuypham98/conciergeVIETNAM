@@ -39,7 +39,8 @@
 }
 #menu ul>li{
 	float: left;
-	padding: 52px 5px 56px 5px;
+    /* padding: 52px 5px 56px 5px; */
+    padding: 4.7% 0.3%;
 	width: 190px;
 	margin-right: 5px;
 	text-align: center;
@@ -67,8 +68,8 @@ text-decoration: none;
 
 #content{
     width: 100%;
-    margin-top: -29px;
-    margin-bottom: 420px;
+    margin-top: -1.9%;
+    margin-bottom: 26%;
 }
 #content .row{
     margin-right: 0px;
