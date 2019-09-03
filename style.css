@@ -90,8 +90,10 @@ text-decoration: none;
     width: 100%;
 }
 #title_tiles:hover a h3{
+    position: absolute;
     z-index: 15;
-    padding: 1.5em 1em;
+    padding: 15% 5%;
+    font-size: auto;
 }
 #title_tiles:hover img{
     opacity: 0.3;
