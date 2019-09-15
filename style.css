@@ -1,9 +1,18 @@
 #main{
     margin: 0px auto;
     font-family: "museo-sans",sans-serif;
-    width: 100%;
+    /* width: 100%; */
 }
-
+.clear{
+    clear: both;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
 #header{
     background: url(./images/Home-Background-77.jpg) no-repeat;
     background-size: cover;
@@ -12,25 +21,86 @@
     /* filter: brightness(92%); */
     background-attachment: fixed;
 }
-#content_header{
-    padding: 7% 0 0 10.2%;
-    
+#header .container{
+    padding-top: 7%;
 }
 #header h2{
-    font-size: 2.5em;
+    font-size: 4vw;
     color: #fff;
 }
 #header center{
-    padding: 10.5%;
+    padding: 11% 0;
 }
 #menu{
     width: 100%;
-    min-height: 113px;
+    /* min-height: 5em; */
     background-color: #000;
     color: #fff;
     position: sticky;
     top: 0;
     z-index: 100;
+}
+#menu .navbar{
+    padding: initial;
+}
+#menu .navbar-nav{
+    margin: 0 auto;
+}
+#menu .nav-item{
+    position: relative;
+    margin-left: 0.2em;
+    padding: 1.2em 0;
+}
+#menu .li-last .nav-link{
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 0.1em 1em;
+    margin: 4% auto;
+}
+#menu .nav-item:hover{
+    background: #fff;
+}
+#menu .nav-item:hover .nav-link{
+    color: #000;
+}
+#menu .li-last:hover{
+    background: #000;
+}
+#menu .li-last:hover .nav-link{
+    color: #b3aeae;
+}
+#menu .nav-item>ul{
+    display: none;
+    position: absolute;
+    width: 18vw;
+    left: 0;
+    top: 100%;
+}
+#menu .nav-item>ul li{
+    background: #fff;
+
+}
+#menu .nav-item:hover>ul{
+    display: block;
+}
+#menu .nav-item ul li{
+        text-align: center;
+        padding: 5px;
+        border-bottom: 1px solid #000;
+    
+}
+#menu .nav-item ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+#menu .nav-item ul li:hover a{
+    color: #5a5a5a;
+}
+#menu .nav-link{
+    font-size: 1.5vw;
+    color: #fff;
+    /* height: 100%; */
 }
 #menu .img-nav img{
     width: 100%;
@@ -41,71 +111,53 @@
 }
 .img-nav{
     width: 25%;
-    margin-right: 5%;
+    margin-right: 10%;
 }
-#menu .row{
-    margin: 0 auto;
-    height: 100%;
-    width: 75%;
-}
- #menu .row ul{
-    list-style-type: none;
-    margin: 0;
-	padding: 0;
-}
-#menu .row ul>li{
-	float: left;
-    margin-right:5px;
-    padding: 6% 15px;
-	text-align: center;
-    font-size: 17px;
-    position: relative;
-}
-#menu #ulpa li{
-    padding: 5px 15px;
-    margin: 0;
-    border-bottom: 1px solid #000;
-}
-#menu .row ul li a{
-    color: #fff;
-}
-#menu .row ul li:hover a{
-    color: #000;
+.img-nav a:hover{
     text-decoration: none;
 }
-#menu div ul li:hover{
-	background-color: lavender;
-    color: #000;
+.main_menu{
+    text-align: right;
 }
-#menu ul li ul{
+.main_menu>ul>li{
+    list-style: none;
+    float: left;
+    padding: 2.5em 0.5em;
+    position: relative;
+}
+.main_menu ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.main_menu ul li ul{
     display: none;
     position: absolute;
-    background-color: #fff;
-    color: #000;
+    background: #000;
     top: 100%;
-    width: 200%;
-    left: 0;
+    left: 0px;
+    width: 12em;
 }
-#menu ul li:hover ul{
+.main_menu ul li:hover ul{
     display: block;
-    /* left: -20px; */
-    margin: 0;
-    
+    background: #fff;
 }
-#menu ul li ul li a{
-    /* height: 50px; */
-    line-height: 25px;
-    padding: 31px;
-    margin: 0;
+.main_menu ul li ul li{
     text-align: center;
-
+    padding: 5px 10px;
+    border-bottom: 1px solid #000;
 }
-
+.main_menu ul li:hover{
+    background: #fff;
+}
+.main_menu ul>li:hover a{
+    color: #000;
+}
 #menu ul #last a{
     border: 2px solid #fff;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 10px 25px;
 }
 #menu #last:hover{
 background: none; 
@@ -120,34 +172,35 @@ color: #fff;
 
 #content{
     width: 100%;
-    margin-top: -1.9%;
-    margin-bottom: 26%;
 }
 #content .row{
     margin-right: 0px;
 }
-#title_tiles{
+.title_tiles{
     position: relative;
     opacity: 1;
+    overflow: hidden;
+
 }
-#title_tiles a h3{
+.title_tiles a h3{
     position: absolute;
     color: black;
     top: 0px;
     z-index: 5;
 }
-#title_tiles img{
+.title_tiles img{
     position: relative;
-    z-index: 10;
+    z-index: 10;height: 15em;
     width: 100%;
+    
 }
-#title_tiles:hover a h3{
+.title_tiles:hover a h3{
     position: absolute;
     z-index: 15;
     padding: 15% 5%;
     font-size: auto;
 }
-#title_tiles:hover img{
+.title_tiles:hover img{
     opacity: 0.3;
 }
 /* #content .row{
@@ -158,38 +211,23 @@ color: #fff;
 }
 #ourstory{
     background-color: #000;
-    width: 100%;
+    color: #fff;
+
 }
 #ourstory .row{
-    width: 88.9%;
-    margin: 0 auto;
-     
-}
-#ourstory .col-sm-6{
-    color: #fff;
-    padding: 70px 100px;
-}
-#ourstory .col-sm-6 img{
-    padding-top: 50px;
+    padding: 7% 0;
 }
 #whatwedo{
     background-color: #fff;
     width: 100%;
 }
 #whatwedo .row{
-    width: 1350px;
-    margin: 0 auto;
-}
-#whatwedo #inter{
-    padding-left: 1em;
-}
-#whatwedo .col-sm-6{
-    color: #000;
-    padding: 70px 80px;
+    padding: 7% 0;
+
 }
 #key{
     float: left;
-    margin-left: -47px;
+    margin-left: -12%;
 }
 #in_development{
     background-color: #000;
@@ -197,20 +235,9 @@ color: #fff;
     color: #fff;
 
 }
-#in_development .row{
-    width: 1350px;
-    margin: 0 auto;
-     
-}
 #in_development #first_in{
-    padding-top: 70px;
-}
-#in_development #first_in img{
-    float: left;
-    margin: 0px 20px 300px 93px;
-}
-#in_development #img{
-    margin-left: -15px;
+    padding: 5% 0;
+
 }
 #news_parent{
     background: url(./images/market-1024x683.jpg) no-repeat;
@@ -224,37 +251,22 @@ color: #fff;
 }
 #news .row{
     /* width: 1350px; */
-    margin: 0 auto;
-}
-#news #opm{
-    margin-left: -3em;
-    width : 765px;
-}
-#news .col-sm-6{
-    color: #000;
-    padding: 70px 80px;
+    padding: 7% 0;
 }
 #bull{
     float: left;
-    margin: 0 0 0 -22px;
+    padding-left: 5%;
 }
-#bull p{
-    margin-left: 4em;
+#bull img{
+    float: left;
+    margin: 0 5% 50% 0;
 }
 #contact .row{
-    width: 1350px;
-    margin: 0 auto;
+    padding: 7% 0;
+
 }
 #contact{
     color: #fff;
-}
-#contact .col-sm-6{
-    padding: 65px 105px;
-    
-}
-#contact #idea{
-    float: left;
-    margin: 0 30px 250px 0;
 }
 #contact #play img{
     margin: 50%;
@@ -265,21 +277,9 @@ color: #fff;
     color: #000;
 
 }
-#consul .row{
-    width: 1350px;
-    margin: 0 auto;
+#consul .first_in{
+    padding: 5% 0;
      
-}
-#consul #first_in{
-    padding-top: 70px;
-    padding-right: 90px;
-}
-#consul #first_in img{
-    float: left;
-    margin: 0px 20px 300px 93px;
-}
-#consul #img{
-    margin-left: -15px;
 }
 #our_office{
     background: url(./images/Pan-1_darker.jpg) no-repeat;
@@ -289,14 +289,18 @@ color: #fff;
     background-attachment: fixed;
     color: #fff;
 }
-#our_office .col-sm-6{
-    padding: 70px 200px;
+#our_office .row{
+    padding: 7% 0;
+
 }
 #the_team .wrap {
     position: relative;
     margin: 0 auto;
-    max-width: 1150px;
+    /* max-width: 1150px; */
     font-size: 1.35em;
+}
+.wrap .row:first-child{
+    padding: 7% 0;
 }
 #the_team .wrap p a{
     font-weight: 500;
@@ -309,48 +313,60 @@ color: #fff;
     color: gray;
     text-decoration: none;
 }
-.wrap>#member{
-    width: 383px;
-    height: 336.8px;
-    float: left;
-    padding-left: 45px;
-    padding-top: 70px;
+.wrap img{
+    max-width:100%;
+    max-height: 180px;
 }
-#member img{
-    max-height:200px;
-    width: 200px;
+.avatar-mem img{
+    position: relative;
+    z-index: 15;
+}
+.avatar-mem p{
+    /* display: none; */
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    text-align: center;
+    margin: 0 auto;
+}
+.avatar-mem img:hover{
+    opacity: 0.3;
+}
+.avatar-mem img:hover p{
+    display: block;
+    z-index: 20;
+    text-align: center;
+
 }
 #footer {
     background-color: #000;
-    height: 607.85px;
+    /* height: 607.85px; */
     color: #fff;
 }
-#footer_content{
-    max-width: 1150px;
-    margin: 0 auto;
-    padding-top: 60px;
+#footer .row{
+    padding: 5% 0;
 }
-#footer_content a{
+#footer a{
     color: #fff;
     text-decoration: none;
 }
-#footer_content a:hover{
+#footer a:hover{
     color: grey;
 }
-#offices .team ul li{
+.team ul li{
     list-style: none;
-}
-#offices .solutions ul{
-    padding-left: 15px;
-}
-#offices h4{
-    font-weight: 600;
-    font-size: 0.9em;
-}
-#offices .info img{
-    padding-left: 1em;
 }
 #footer_social img{
     max-height: 20px;
-
+    padding-left: 1em;
+}
+#footer .solutions ul{
+    padding-left: 5%;
+}
+#footer .solutions ul li{
+    list-style-type: disc;
+}
+#footer h4{
+    font-weight: 600;
+    font-size: 0.9em;
 }
