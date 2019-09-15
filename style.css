@@ -102,73 +102,7 @@ li{
     color: #fff;
     /* height: 100%; */
 }
-#menu .img-nav img{
-    width: 100%;
-    height: 50%;
-    margin: 6% 0% 2% 0%;
-    float: left;
 
-}
-.img-nav{
-    width: 25%;
-    margin-right: 10%;
-}
-.img-nav a:hover{
-    text-decoration: none;
-}
-.main_menu{
-    text-align: right;
-}
-.main_menu>ul>li{
-    list-style: none;
-    float: left;
-    padding: 2.5em 0.5em;
-    position: relative;
-}
-.main_menu ul li a{
-    text-decoration: none;
-    color: #fff;
-
-}
-.main_menu ul li ul{
-    display: none;
-    position: absolute;
-    background: #000;
-    top: 100%;
-    left: 0px;
-    width: 12em;
-}
-.main_menu ul li:hover ul{
-    display: block;
-    background: #fff;
-}
-.main_menu ul li ul li{
-    text-align: center;
-    padding: 5px 10px;
-    border-bottom: 1px solid #000;
-}
-.main_menu ul li:hover{
-    background: #fff;
-}
-.main_menu ul>li:hover a{
-    color: #000;
-}
-#menu ul #last a{
-    border: 2px solid #fff;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-}
-#menu #last:hover{
-background: none; 
-opacity: 0.7;
-text-decoration: none;
-}
-#menu ul #last :hover  a{
-    text-decoration: none;
-color: #fff;
-
-}
 
 #content{
     width: 100%;
