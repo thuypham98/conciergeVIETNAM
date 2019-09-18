@@ -1,6 +1,7 @@
 #main{
     margin: 0px auto;
     font-family: "museo-sans",sans-serif;
+    font-size: 1.3vw;
     /* width: 100%; */
 }
 .clear{
@@ -25,11 +26,11 @@ li{
     padding-top: 7%;
 }
 #header h2{
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: #fff;
 }
 #header center{
-    padding: 11% 0;
+    padding: 12% 0;
 }
 #header > div > a:hover{
     text-decoration: none;
@@ -101,7 +102,7 @@ li{
     color: #5a5a5a;
 }
 #menu .nav-link{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: #fff;
     /* height: 100%; */
 }
@@ -110,6 +111,9 @@ li{
 #content{
     width: 100%;
 }
+#content h2{
+    font-size: 2.5vw;
+}
 #content .row{
     margin-right: 0px;
 }
@@ -117,6 +121,8 @@ li{
     position: relative;
     opacity: 1;
     overflow: hidden;
+    height: 100%;
+
 
 }
 .title_tiles a h3{
@@ -127,7 +133,9 @@ li{
 }
 .title_tiles img{
     position: relative;
-    z-index: 10;height: 15em;
+    z-index: 10;
+    /* height: 45vh; */
+    height: 100%;
     width: 100%;
     
 }
@@ -135,7 +143,7 @@ li{
     position: absolute;
     z-index: 15;
     padding: 15% 5%;
-    font-size: auto;
+    font-size: 2.5vw;
 }
 .title_tiles:hover img{
     opacity: 0.3;
@@ -143,7 +151,7 @@ li{
 /* #content .row{
     margin-bottom: -148px;
 } */
-.row .col-sm-4{
+.row .col-4{
     padding: 0px;
 }
 #ourstory{
@@ -152,14 +160,14 @@ li{
 
 }
 #ourstory .row{
-    padding: 7% 0;
+    padding: 6% 0;
 }
 #whatwedo{
     background-color: #fff;
     width: 100%;
 }
 #whatwedo .row{
-    padding: 7% 0;
+    padding: 6% 0;
 
 }
 #key{
@@ -172,8 +180,8 @@ li{
     color: #fff;
 
 }
-#in_development #first_in{
-    padding: 5% 0;
+#in_development .row{
+    padding: 6% 0;
 
 }
 #news_parent{
@@ -188,7 +196,7 @@ li{
 }
 #news .row{
     /* width: 1350px; */
-    padding: 7% 0;
+    padding: 6% 0;
 }
 #bull{
     float: left;
@@ -199,7 +207,7 @@ li{
     margin: 0 5% 50% 0;
 }
 #contact .row{
-    padding: 7% 0;
+    padding: 6% 0;
 
 }
 #contact{
@@ -214,8 +222,8 @@ li{
     color: #000;
 
 }
-#consul .first_in{
-    padding: 5% 0;
+#consul .row{
+    padding: 6% 0;
      
 }
 #our_office{
@@ -227,7 +235,7 @@ li{
     color: #fff;
 }
 #our_office .row{
-    padding: 7% 0;
+    padding: 6% 0;
 
 }
 #the_team .wrap {
@@ -237,7 +245,7 @@ li{
     font-size: 1.35em;
 }
 .wrap .row:first-child{
-    padding: 7% 0;
+    padding: 6% 0;
 }
 #the_team .wrap p a{
     font-weight: 500;
@@ -290,7 +298,7 @@ li{
     color: #fff;
 }
 #footer .row{
-    padding: 5% 0;
+    padding: 6% 0;
 }
 #footer a{
     color: #fff;
@@ -303,7 +311,7 @@ li{
     list-style: none;
 }
 #footer_social img{
-    max-height: 20px;
+    max-width: 3vw;
     padding-left: 1em;
 }
 #footer .solutions ul{
