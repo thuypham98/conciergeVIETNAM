@@ -173,6 +173,7 @@ li{
 #key{
     float: left;
     margin-left: -12%;
+    width: 3vw;
 }
 #in_development{
     background-color: #000;
@@ -188,6 +189,7 @@ li{
     background: url(./images/market-1024x683.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     width: 100%;
 }
 #news{
@@ -215,6 +217,7 @@ li{
 }
 #contact #play img{
     margin: 50%;
+    width: 3vw;
 }
 #consul{
     background-color: #fff;
@@ -229,9 +232,10 @@ li{
 #our_office{
     background: url(./images/Pan-1_darker.jpg) no-repeat;
     width: 100%;
-    height: 648.25px;
-    background-size: 100% 100%;
+    min-height: 35em;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     color: #fff;
 }
 #our_office .row{
