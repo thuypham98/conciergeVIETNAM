@@ -4,22 +4,14 @@
     font-size: 1.3vw;
     /* width: 100%; */
 }
-.clear{
-    clear: both;
-}
-ul{
-    margin: 0px;
-    padding: 0px;
-}
-li{
-    list-style: none;
-}
+.clear{ clear: both; }
+ul{ margin: 0px; padding: 0px;}
+li{ list-style: none; }
 #header{
     background: url(./images/Home-Background-77.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    /* height: 760px; */
-    /* filter: brightness(92%); */
+    /* height: 760px;filter: brightness(92%); */
     background-attachment: fixed;
 }
 #header .container{
@@ -30,7 +22,7 @@ li{
     color: #fff;
 }
 #header center{
-    padding: 12% 0;
+    padding: 13% 0;
 }
 #header > div > a:hover{
     text-decoration: none;
@@ -45,7 +37,7 @@ li{
     z-index: 100;
 }
 #menu .navbar{
-    padding: initial;
+    padding: initial; /*default value */
 }
 #menu .navbar-nav{
     margin: 0 auto;
@@ -53,13 +45,12 @@ li{
 #menu .nav-item{
     position: relative;
     margin-left: 0.2em;
-    padding: 1.2em 0;
+    padding: 4% 0;
 }
 #menu .li-last .nav-link{
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 5px;
-    padding: 0.1em 1em;
-    margin: 4% auto;
+     /*padding: 1vw;margin: 4% 0;width: max-content; */
 }
 #menu .nav-item:hover{
     background: #fff;
@@ -76,29 +67,27 @@ li{
 #menu .nav-item>ul{
     display: none;
     position: absolute;
-    width: 18vw;
+    width: max-content;
     left: 0;
     top: 100%;
 }
 #menu .nav-item>ul li{
     background: #fff;
-
 }
 #menu .nav-item:hover>ul{
     display: block;
 }
 #menu .nav-item ul li{
-        text-align: center;
-        padding: 5px;
-        border-bottom: 1px solid #000;
-    
+        /* text-align: center; */
+        padding: .8em .3em;
+        border-top: 1px solid #000;
 }
 #menu .nav-item ul li a{
     color: #000;
     text-decoration: none;
     font-size: 1.3vw;
 }
-#menu .nav-item ul li:hover a{
+#menu .nav-item > ul li:hover a{
     color: #5a5a5a;
 }
 #menu .nav-link{
@@ -106,8 +95,6 @@ li{
     color: #fff;
     /* height: 100%; */
 }
-
-
 #content{
     width: 100%;
 }
@@ -122,8 +109,6 @@ li{
     opacity: 1;
     overflow: hidden;
     height: 100%;
-
-
 }
 .title_tiles a h3{
     position: absolute;
@@ -148,16 +133,12 @@ li{
 .title_tiles:hover img{
     opacity: 0.3;
 }
-/* #content .row{
-    margin-bottom: -148px;
-} */
 .row .col-4{
     padding: 0px;
 }
 #ourstory{
     background-color: #000;
     color: #fff;
-
 }
 #ourstory .row{
     padding: 6% 0;
@@ -168,7 +149,6 @@ li{
 }
 #whatwedo .row{
     padding: 6% 0;
-
 }
 #key{
     float: left;
@@ -179,11 +159,9 @@ li{
     background-color: #000;
     width: 100%;
     color: #fff;
-
 }
 #in_development .row{
     padding: 6% 0;
-
 }
 #news_parent{
     background: url(./images/market-1024x683.jpg) no-repeat;
@@ -210,7 +188,6 @@ li{
 }
 #contact .row{
     padding: 6% 0;
-
 }
 #contact{
     color: #fff;
@@ -223,11 +200,9 @@ li{
     background-color: #fff;
     width: 100%;
     color: #000;
-
 }
 #consul .row{
-    padding: 6% 0;
-     
+    padding: 6% 0; 
 }
 #our_office{
     background: url(./images/Pan-1_darker.jpg) no-repeat;
@@ -240,7 +215,6 @@ li{
 }
 #our_office .row{
     padding: 6% 0;
-
 }
 #the_team .wrap {
     position: relative;
@@ -276,11 +250,8 @@ li{
 }
 .avatar-mem p{
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 0; right: 0; top: 0; bottom: 0;
     height: 15%;
-    top: 0;
-    bottom: 0;
     z-index: 10;
     margin: auto;
     text-align: center;
@@ -294,7 +265,6 @@ li{
     display: block;
     z-index: 20;
     text-align: center;
-
 }
 #footer {
     background-color: #000;
@@ -328,3 +298,22 @@ li{
     font-weight: 600;
     font-size: 0.9em;
 }
+  @media screen and (max-width: 767px) {
+    #menu .li-last .nav-link{
+        padding: 1vw;
+        width: max-content;
+    }
+    #menu .nav-item>ul {
+        width: auto;
+        display: none;
+        position: initial;
+        /* margin-left: 10%; */
+    }
+    #menu .nav-item{
+        padding: .5em;
+    }
+    .navbar-toggler-icon{
+        width: 1em !important;
+        height: 1em !important;
+    }
+  }
