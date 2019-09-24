@@ -206,7 +206,7 @@ li{ list-style: none; }
     padding: 6% 0; 
 }
 #our_office{
-    background: url(./images/Pan-1_darker.jpg) no-repeat;
+    background: url(./images/Da_Lat.jpg) no-repeat;
     width: 100%;
     min-height: 35em;
     background-size: cover;
@@ -216,6 +216,14 @@ li{ list-style: none; }
 }
 #our_office .row{
     padding: 6% 0;
+}
+.background_text{
+    filter: drop-shadow(2px 3px 4px black);
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 100%;
+    padding: 1.5vw;
 }
 #the_team .wrap {
     position: relative;
@@ -256,7 +264,7 @@ li{ list-style: none; }
     z-index: 10;
     margin: auto;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: bold;
 }
 .avatar-mem img:hover{
