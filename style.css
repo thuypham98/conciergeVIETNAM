@@ -8,11 +8,12 @@
 ul{ margin: 0px; padding: 0px;}
 li{ list-style: none; }
 #header{
-    background: url(./images/Home-Background-77.jpg) no-repeat;
+    background: url(./images/TP_HCM.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    /* height: 760px;filter: brightness(92%); */
+    background-position: center;
     background-attachment: fixed;
+    /* height: 760px;filter: brightness(92%); */
 }
 #header .container{
     padding-top: 7%;
@@ -301,6 +302,8 @@ li{ list-style: none; }
   @media screen and (max-width: 767px) {
     #menu .li-last .nav-link{
         padding: 1vw;
+        -moz-width: max-content;
+        -ms-width: max-content;
         width: max-content;
     }
     #menu .nav-item>ul {
